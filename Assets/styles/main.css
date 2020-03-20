@@ -34,6 +34,12 @@ body::-webkit-scrollbar{
     z-index: 1;
 }
 
+audio{
+    position: fixed;
+    right: -255px;
+    top: 0
+}
+
 .remove-after-title::after{
     content: "" !important;
 }

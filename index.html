@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="Assets/styles/main.css" />
 </head>
 <body>
-    <audio src="Assets/music.mp3" id="audio" loop></audio>
+
+    <audio  
+        controls
+        autoplay
+    >
+        <source src="Assets/music.mp3" type="audio/mpeg">
+    </audio>
     
     <header>
 
@@ -100,7 +106,6 @@
 <script src="Assets/scripts/jquery.min.js"></script>
 <script src="Assets/scripts/jquery.animateTyping.js"></script>
 <script>
-    const audio = document.getElementById("audio").play();
 
     const pTag = document.querySelectorAll("p");
 
