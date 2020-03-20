@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: IranNastaliq,'IranNastaliq',tahoma;
+    color: white;
+    direction: rtl;
+    scroll-behavior: smooth;
+    text-align: right;
+}
+
+*::selection{
+    background: transparent;
+}
+
+html, body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+hr{
+    border-color: white;
+}
+
+.title{
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+#title-hr{
+    position: relative;
+    bottom: 81px;
+    border-color: hsl(6, 29%, 44%);
+}
+
+.remove-after-title::after{
+    content: "" !important;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main p{
+    font-size: 40px;
+}
+
+.img-emza{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: 0.4s;
+    bottom: 200px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+    align-items: center;
+}

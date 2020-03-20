@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبریک عید نوروز</title>
+    <link href='http://www.fontonline.ir/css/IranNastaliq.css' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="Assets/styles/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="Assets/styles/main.css" />
+</head>
+<body>
+    
+    <header>
+
+        <h1
+            class="animate-typing title"
+            data-type-speed="200"
+            data-type-delay="0"
+            data-cursor-speed="300">
+                به نام حضرت دوست
+        </h1>
+    
+        <hr id="title-hr" />
+    </header>
+
+    <main>
+    
+        <p
+            class="animate-typing remove-after-title"
+            data-type-speed="200"
+            data-type-delay="4500"
+            data-cursor-speed="300"
+        >
+            سلام خدمت شما, دوست عزیز ...
+        </p>
+
+        <p
+            class="animate-typing remove-after-title"
+            data-type-speed="200"
+            data-type-delay="10000"
+            data-cursor-speed="300"
+        >
+            سالی دگر هم گذشت, چالش و سختی فراوانی داشت اما گذشت ...
+        </p>
+
+        <p
+            class="animate-typing remove-after-title"
+            data-type-speed="200"
+            data-type-delay="21500"
+            data-cursor-speed="300"
+        >
+            نکته مهم این است که زندگی همچنان ادامه دارد و باید از زندگی خود لذت ببریم ...
+        </p>
+
+        <p
+        class="animate-typing remove-after-title"
+        data-type-speed="200"
+        data-type-delay="37000"
+        data-cursor-speed="300"
+    >
+        عید نوروز را به شما دوست عزیز تبریک میگویم, سالی سرشار از موفقیت را برایتان آرزومندم ...
+    </p>
+
+    <p
+    class="animate-typing remove-after-title"
+    data-type-speed="200"
+    data-type-delay="55000"
+    data-cursor-speed="300"
+>
+        عید نوروز 1399
+</p>
+
+<br>
+
+<p
+    class="animate-typing remove-after-title"
+    data-type-speed="200"
+    data-type-delay="59000"
+    data-cursor-speed="300"
+>
+        طراح و سازنده: امیررضا همتی                 |
+</p>
+
+
+<audio src="Assets/music.mp3" autoplay loop"></audio>
+
+<div class="d-none element">
+    <p
+    class="animate-typing remove-after-title"
+    data-type-speed="200"
+    data-type-delay="66000"
+    data-cursor-speed="300"
+>
+        از طرف امیررضا همتی
+</p>
+
+<img src="Assets/images/emza.jpg" alt="emza" class="img-emza" title="امیررضا همتی" />
+</div>
+
+<img src="Assets/images/images.jpg" alt="norooz" title="عید نوروز مبارک باد" class="d-none img-norooz" />
+</main>
+
+<script src="Assets/scripts/jquery.min.js"></script>
+<script src="Assets/scripts/jquery.animateTyping.js"></script>
+<script>
+    const pTag = document.querySelectorAll("p");
+
+    const timeScroll = setInterval(() => {
+        const y =  document.body.scrollHeight - window.innerHeight;
+
+        scrollTo(0, y);
+    } ,100);
+
+        setTimeout(() => {
+            document.querySelector(".title").classList.add("remove-after-title");
+        }, 3300);
+
+        setTimeout(() => {
+            pTag[0].classList.remove("remove-after-title");
+        },4500);
+
+        setTimeout(() => {
+            pTag[0].classList.add("remove-after-title");
+            pTag[1].classList.remove("remove-after-title");
+        } ,10000);
+
+        setTimeout(() => {
+            pTag[1].classList.add("remove-after-title");
+            pTag[2].classList.remove("remove-after-title");
+        } ,21500);
+
+        setTimeout(() => {
+            pTag[2].classList.add("remove-after-title");
+            pTag[3].classList.remove("remove-after-title");
+        } ,37000);
+
+        setTimeout(() => {
+            pTag[3].classList.add("remove-after-title");
+            pTag[4].classList.remove("remove-after-title");
+        } ,55000);
+
+        setTimeout(() => {
+            pTag[4].classList.add("remove-after-title");
+            pTag[5].classList.remove("remove-after-title");
+        } ,59000);
+
+        setTimeout(() => {
+            document.querySelector(".element").classList.remove("d-none");
+            document.querySelector(".element").classList.add("d-flex", "justify-content-between");
+            pTag[5].classList.add("remove-after-title");
+            pTag[6].classList.remove("remove-after-title");
+        
+
+            const imgEmza = document.querySelector(".img-emza");
+            imgEmza.style.visibility = "inherit";
+            imgEmza.style.opacity = "1";
+            imgEmza.style.bottom = "0";
+
+            setTimeout(() => {
+                document.querySelector(".img-norooz").classList.remove("d-none");
+
+                setTimeout(() => {
+                    clearInterval(timeScroll);
+                }, 200);
+            } ,1000)
+        } ,66000);
+
+    </script>
+</body>
+</html>
