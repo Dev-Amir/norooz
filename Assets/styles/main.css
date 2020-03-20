@@ -19,6 +19,7 @@ html, body{
     background-image: url(../images/dark.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 body::-webkit-scrollbar{
