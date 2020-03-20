@@ -37,7 +37,7 @@ body::-webkit-scrollbar{
 audio{
     position: fixed;
     right: -171px;
-    bottom: 50%;
+    bottom: 75px;
     z-index: 3;
 }
 
