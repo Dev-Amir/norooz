@@ -25,22 +25,12 @@ body::-webkit-scrollbar{
     width: 0;
 }
 
-hr{
-    border-color: white;
-}
-
 .title{
     text-align: center;
     word-spacing: 10px;
     font-size: 60px;
     position: relative;
     z-index: 1;
-}
-
-#title-hr{
-    position: relative;
-    bottom: 81px;
-    border-color: hsl(6, 29%, 44%);
 }
 
 .remove-after-title::after{
@@ -79,4 +69,8 @@ main p{
 .justify-content-between{
     justify-content: space-between;
     align-items: center;
+}
+
+img{
+    max-width: 100%;
 }
