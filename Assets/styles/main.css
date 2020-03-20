@@ -37,8 +37,12 @@ body::-webkit-scrollbar{
 audio{
     position: fixed;
     right: -171px;
-    bottom: 75px;
+    bottom: 0;
     z-index: 3;
+}
+
+main{
+    padding-bottom: 100px;
 }
 
 .remove-after-title::after{
