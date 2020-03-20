@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="Assets/styles/main.css" />
 </head>
 <body>
-    <audio src="Assets/music.mp3" autoplay loop></audio>
+    <audio src="Assets/music.mp3" controls autoplay loop></audio>
     
     <header>
 
@@ -102,11 +102,15 @@
 <script>
     const pTag = document.querySelectorAll("p");
 
-    const timeScroll = setInterval(() => {
-        const y =  document.body.scrollHeight - window.innerHeight;
+    let timeScroll;
 
-        scrollTo(0, y);
-    } ,100);
+    setTimeout(() => {
+        timeScroll = setInterval(() => {
+            const y =  document.body.scrollHeight - window.innerHeight;
+
+            scrollTo(0, y);
+        } ,100);
+    } ,1000)
 
         setTimeout(() => {
             document.querySelector(".title").classList.add("remove-after-title");
